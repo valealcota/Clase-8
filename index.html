@@ -5,98 +5,127 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>ELECTIVOS DE DISEÑO</title>
         <style>
-            *, *::before, *::after {
-                box-sizing: border-box;
-                margin: 0;
-                padding: 0;
-            }
+            *,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-            :root {
-                --color-oscurisimo: #800a49;
-                --color-oscuro: #bf0f6d;
-                --color-normal: deeppink;
-                --color-iluminado: pink;
-                --color-iluminadisimo: lightpink;
-            }
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 
-            body {
-                font-family: Helvetica, Arial, sans-serif;
-                color: var(--color-normal);
-                text-align: center;
-                font-size: 100%;
-            }
-            div#contenedor {
-                margin: 1rem auto;
-                width: 90%;
-                max-width: 780px;
-            }
+:root {
+    --color-oscurisimo: #8, 6, 99;
+    --color-oscuro: #11, 8, 130;
+    --color-normal: #16, 11, 181;
+    --color-iluminado: #63, 58, 232;
+    --color-iluminadisimo: # 150, 148, 255;
+    --fuente: "Source Code Pro", monospace;
+}
 
-            h1 {
-                margin: 1rem 0;
-                font-weight: 400;
-                font-size: calc(100% + 3vw + 3vh);
-            }
+body {
+    font-family: var(--fuente);
+    color: var(--color-normal);
+    text-align: center;
+    font-size: 100%;
+}
 
-            h2 {
-                margin: 3rem 0;
-                font-weight: 400;
-                letter-spacing: 0.25rem;
-                font-size: calc(100% + 1vw + 1vh);
-                color: var(--color-oscuro);
-            }
+a {
+    color: var(--color-oscuro);
+    text-decoration: none;
+}
 
-            input {
-                border: 0.1rem solid var(--color-iluminado);
-                padding: 0.5rem 1rem;
-                font-family: inherit;
-                font-size: 15px;
-                color: var(--color-oscuro);
-                outline: none;
-                margin-bottom: 1.5rem;
-                width: 100%;
-                display: block;
-                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="pink" viewBox="0 0 16 16"><path d="M6.5 13a6.47 6.47 0 0 0 3.845-1.258h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1A6.47 6.47 0 0 0 13 6.5 6.5 6.5 0 0 0 6.5 0a6.5 6.5 0 1 0 0 13m0-8.518c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018"/></svg>');
-                background-repeat: no-repeat;
-                background-size: 1rem;
-                background-position: 99% center;
-            }
+a:hover {
+    color: var(--color-oscurisimo);
+    text-decoration: underline;
+}
+div#contenedor {
+    margin: 1rem auto;
+    width: 90%;
+    max-width: 980px;
+}
 
-            input::placeholder {
-                color: var(--color-iluminado);
-            }
+h1 {
+    margin: 1rem 0;
+    font-weight: 400;
+    font-size: calc(100% + 3vw + 3vh);
+}
 
-            input:focus {
-                border-color: var(--color-normal);
-            }
+h2 {
+    margin: 3rem 0;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+    font-size: calc(100% + 1vw + 1vh);
+    color: var(--color-oscuro);
+}
 
-            div#contenedordetabla {
-                overflow-x: auto;
-                font-size: 90%;
-            }
+input {
+    border: 0.1rem solid var(--color-iluminado);
+    padding: 0.5rem 1rem;
+    font-family: inherit;
+    font-size: 15px;
+    color: var(--color-oscuro);
+    outline: none;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    display: block;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M10.15,61.5H25.77V68H10.15a3.13,3.13,0,0,1-3.08-3.08v-.49A3.1,3.1,0,0,1,10.15,61.5Zm0,18.33H25.77v6.52H10.15a3.11,3.11,0,0,1-3.08-3V82.9A3.12,3.12,0,0,1,10.15,79.83ZM23.92,37.27H19v-24a4.09,4.09,0,0,1,4.06-4h49.7a4.08,4.08,0,0,1,4,4v.87H23.92ZM19,43.05v-.86H71.89V19.06h4.92l7.51,1.23V35.55l-7.51,1.72v5.78a4.09,4.09,0,0,1-4,4.06H23.06A4.1,4.1,0,0,1,19,43.05Zm9.84-5.17V18.45H39.67V37.88ZM92.93,77.74H71.28a16.85,16.85,0,0,1-16.36,13H31.3V57.07H54.92A16.88,16.88,0,0,1,71.28,70H92.93Z"></path></svg>');
+    background-repeat: no-repeat;
+    background-size: 1rem;
+    background-position: 99% center;
+}
 
-            table {
-                width: 100%;
-                border-collapse: collapse;
-                text-align: left;
-                margin-bottom: 3rem;
-            }
+input::placeholder {
+    color: var(--color-iluminado);
+}
 
-            thead {
-                background: var(--color-iluminado);
-            }
+input:focus {
+    border-color: var(--color-normal);
+}
 
-            td,
-            th {
-                border: 1px solid var(--color-normal);
-                padding: 0.75rem;
-            }
+div#contenedordetabla {
+    overflow-x: auto;
+    font-size: 90%;
+}
 
-            td:nth-child(1),
-            th:nth-child(1),
-            td:nth-child(3),
-            th:nth-child(3) {
-                text-align: center;
-            }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+thead {
+    background: var(--color-iluminadisimo);
+    color: var(--color-oscuro);
+}
+
+tbody {
+    color: var(--color-normal);
+}
+
+td,
+th {
+    border: 1px solid var(--color-normal);
+    padding: 0.75rem;
+}
+
+th:nth-child(1),
+td:nth-child(1),
+th:nth-child(4),
+td:nth-child(4) {
+    text-align: center;
+}
+
+td:nth-child(2) {
+    color: var(--color-oscuro);
+    font-weight: 800;
+}
+
+td:nth-child(3) {
+    font-style: italic;
+}
         </style>
     </head>
     <body>

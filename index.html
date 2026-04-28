@@ -165,7 +165,7 @@ td:nth-child(3) {
                 .then((datos) => {
                     var trabajo = datos.data;
                     console.log(trabajo);
-                   trabajo.forEach((x, 1) => {
+                   trabajo.forEach((x, 0) => {
                         t.innerHTML += `<tr style="${x.ok == 1 ? "background-color: var(--color-iluminadisimo); color: var(--color-oscurisimo)" : ""}"><td>${x.n}</td><td>${x.name}</td><td>${x.track}</td><td>${x.group}</td><td>${x.focus}</td></tr>`;
                     });
                 })
